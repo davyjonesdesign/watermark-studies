@@ -184,7 +184,7 @@ a {
 }
 #logo-long {
   margin: 0;
-  width: 240px;
+  width: 300px;
 }
 .nav-right {
   display: flex;

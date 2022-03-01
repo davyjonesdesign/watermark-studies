@@ -1,4 +1,5 @@
 <template>
+<div>
     <form @submit.prevent="handleSubmit">
         <label>Email:</label>
         <input type="email" require v-model="email">
@@ -42,6 +43,7 @@
     <p>Role: {{ role }}</p>
     <p>Terms accepted: {{ terms }}</p>
     <!-- <p>Names: {{ names }}</p> -->
+    </div>
 </template>
 
 <script>

@@ -1,30 +1,28 @@
 <template>
   <div class="resources-wrapper">
-    
     <div v-if="errorR">
       {{ error }}
     </div>
-    
+
     <div v-if="resources.length">
       <ResourceList :resources="resources" />
     </div>
-    <div v-else class="spinner"> 
+    <div v-else class="spinner">
       <Loader />
     </div>
   </div>
 </template>
 <script>
-import ResourceList from '../components/ResourceList.vue'
-import getResources from '../composables/getResources'
-import Loader from '../components/Loader.vue'
+import ResourceList from "../components/ResourceList.vue";
+import getResources from "../composables/getResources";
+import Loader from "../components/Loader.vue";
 
 export default {
   name: "Home",
   components: { ResourceList, Loader },
   setup() {
-    const { resources, errorR, loadR } = getResources()
-    
-    
+    const { resources, errorR, loadR } = getResources();
+
     // const posts = ref([])
     // const error = ref(null)
 
@@ -43,11 +41,11 @@ export default {
     // }
 
     // load()
-    loadR()
+    loadR();
 
     // const showPosts = ref(true)
 
-    return { resources, errorR }
+    return { resources, errorR };
 
     // const search = ref('')
     // const names = ref(['mario', 'luigi', 'toad', 'bowser', 'koopa'])
@@ -63,7 +61,7 @@ export default {
     // const matchingNames = computed(() => {
     //   return names.value.filter((name) => name.includes(search.value))
     // })
-    
+
     // const handleClick = () => {
     //   stopWatch()
     //   stopEffect()
@@ -77,7 +75,6 @@ export default {
     // }
     // return { ninjaOne, updateNinjaOne }
 
-
     // const name = ref('mario')
     // const age = ref(30)
     // const handleClick = () => {
@@ -86,7 +83,7 @@ export default {
     // }
     // return { name, age, handleClick}
   },
-}
+};
 </script>
 
 <style scoped>
@@ -95,5 +92,9 @@ export default {
   max-width: 960px;
   margin: auto;
 }
-
+@media (max-width: 960px) {
+  .resources-wrapper {
+    padding: 20px 20px;
+  }
+}
 </style>

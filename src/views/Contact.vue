@@ -6,16 +6,14 @@
   </div>
 </template>
 <script>
-import SignupForm from "@/components/SignupForm.vue"
-import Loader from "@/components/Loader.vue"
-
+import SignupForm from "@/components/SignupForm.vue";
+import Loader from "@/components/Loader.vue";
 
 export default {
   name: "Contact",
   components: {
     SignupForm,
-    Loader
+    Loader,
   },
 };
 </script>
-

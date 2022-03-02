@@ -1,39 +1,37 @@
 <template>
-  <div >
-      <router-link :to="{ name: 'Details', params: { id: post.id } }" class="postCard">
-          <div class="card-img">
-              <img :src="post.image" alt="post.verse">
-          </div>
-          <div class="post-content">
-              <h2 class="post-title">{{ post.verse }}</h2>
-              <h4 class="post-verse">{{ post.title }}</h4>
-            <p class="post-snippet">{{ snippet }}</p>
-            <button class="postCard-btn">Go to Full Study</button>
-          </div>
-          
+  <div>
+    <router-link
+      :to="{ name: 'Details', params: { id: post.id } }"
+      class="postCard"
+    >
+      <div class="card-img">
+        <img :src="post.image" alt="post.verse" />
+      </div>
+      <div class="post-content">
+        <h2 class="post-title">{{ post.verse }}</h2>
+        <h4 class="post-verse">{{ post.title }}</h4>
+        <p class="post-snippet">{{ snippet }}</p>
+        <button class="postCard-btn">Go to Full Study</button>
+      </div>
+    </router-link>
 
-      </router-link>
-      
-      <span v-for="tag in post.tags" :key="tag">
-          #{{ tag }}
-      </span>
+    <span v-for="tag in post.tags" :key="tag"> #{{ tag }} </span>
   </div>
 </template>
 
 <script>
-import { computed } from'vue'
+import { computed } from "vue";
 
 export default {
-    props: ['post'],
-    setup(props) {
-        const snippet = computed(() => {
-            return props.post.content.substring(0,225) + '....'
-        })
+  props: ["post"],
+  setup(props) {
+    const snippet = computed(() => {
+      return props.post.content.substring(0, 225) + "....";
+    });
 
-        return { snippet }
-        
-    }
-}
+    return { snippet };
+  },
+};
 </script>
 
 <style>
@@ -48,10 +46,11 @@ export default {
   box-shadow: var(--shadow-subtle);
   overflow: hidden;
   /* max-width: 960px; */
+  height: 550px;
 }
 .postCard img {
   display: block;
-  height: 100%;
+  height: 300px;
   width: 100%;
   object-position: top;
   overflow: hidden;
@@ -65,7 +64,7 @@ export default {
   height: 300px;
 }
 .post-content {
-  margin: 10px 15px 15px 20px;
+  margin: 10px 15px 10px 20px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -76,14 +75,13 @@ export default {
   margin: 5px 0;
   align-self: flex-start;
   color: var(--color-periwinkle);
-    /* position: absolute; */
+  /* position: absolute; */
 }
 .post-title {
   margin: 5px 0;
   font-size: 26px;
   text-decoration: none;
   color: var(--color-gray-darkest);
-
 }
 .post-snippet {
   margin: 5px 0 15px;
@@ -113,7 +111,6 @@ export default {
 .postCard:hover {
   box-shadow: var(--shadow-bold);
   background: white;
-
 }
 .postCard:hover img {
   transform: scale(1.1);

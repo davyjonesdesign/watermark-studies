@@ -4,8 +4,19 @@
       <div class="nav-content">
         <div class="nav-logo">
           <router-link :to="{ name: 'Home' }" class="logo-link">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M12.72632,17.90554l-.11025-.27358L10.253,21.6903l-.03222.05472.00169.00539-.20517.35242a17.1872,17.1872,0,0,1-1.915,2.1822.66851.66851,0,0,0-.17726.7155l.72912,1.85713a.46529.46529,0,0,0,.431.30619l1.28239.01578c.86426.01215,1.44036.01991,2.11126.01789l.21251-.90489a3.04936,3.04936,0,0,1-1.30447-.5987,3.08951,3.08951,0,0,1-.39856-3.13221l1.17485-2.01727.03636-.061-.00207-.00493.89163-1.53129.03636-.061C12.9894,18.55761,12.85508,18.22459,12.72632,17.90554Z"/><path d="M31.67976,26.16531a3.59565,3.59565,0,0,1-1.98568-1.97814,97.28842,97.28842,0,0,1-4.58816-12.29075l-.86528.05077-.0695-.04183-.02769.04755-.00532.00033-.05306.09989L19.38192,20.128C17.262,14.51239,13.80005,5.28353,13.75055,5.15023a.46329.46329,0,0,0-.432-.30619c-1.21319.00013-3.093-.03358-4.25411-.03525l-.12111.91752a3.03257,3.03257,0,0,1,2.06432,1.92186c.04956.10856.48678,1.25612,1.12093,2.933L9.24206,15.53828c-.599-1.47545-1.05857-2.664-1.46779-3.80127L5.1859,5.15234A.46413.46413,0,0,0,4.751,4.84562c-1.33988.005-3.404-.02875-4.6282-.03209L0,5.75367c.96376.17934,1.60759.78692,2.305,2.05915A97.59394,97.59394,0,0,1,6.89213,20.10358l.866-.05083.06883.04136.02737-.047.00562-.00033.05341-.101,4.70281-8.07406c2.1195,5.61553,5.58185,14.8453,5.63135,14.9786a.45944.45944,0,0,0,.433.30619c1.21557-.00046,3.087.03185,4.25313.03473l.12112-.91752a3.02958,3.02958,0,0,1-2.06335-1.92133c-.04981-.10856-.48732-1.25652-1.12182-2.934L22.75645,16.461c.593,1.45874,1.0524,2.64766,1.46732,3.80252l2.5884,6.58362a.46385.46385,0,0,0,.4349.30724c1.35554-.00556,3.37265.02977,4.62822.03157L32,26.24738Z"/><path d="M19.28829,14.135l.09367.23412,2.39637-4.11463-.00163-.00513.21036-.36124a17.34513,17.34513,0,0,1,1.90976-2.17364A.67086.67086,0,0,0,24.07405,7L23.344,5.14181a.46007.46007,0,0,0-.43-.30566l-1.28338-.01578c-.86427-.012-1.44037-.02041-2.11127-.01736l-.2125.90436a3.06993,3.06993,0,0,1,1.30447.5987,3.08642,3.08642,0,0,1,.39857,3.13168L19.835,11.455l-.03636.061.00224.00545-.89181,1.53129-.03638.06155C19.01407,13.45562,19.155,13.80373,19.28829,14.135Z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+              <path
+                d="M12.72632,17.90554l-.11025-.27358L10.253,21.6903l-.03222.05472.00169.00539-.20517.35242a17.1872,17.1872,0,0,1-1.915,2.1822.66851.66851,0,0,0-.17726.7155l.72912,1.85713a.46529.46529,0,0,0,.431.30619l1.28239.01578c.86426.01215,1.44036.01991,2.11126.01789l.21251-.90489a3.04936,3.04936,0,0,1-1.30447-.5987,3.08951,3.08951,0,0,1-.39856-3.13221l1.17485-2.01727.03636-.061-.00207-.00493.89163-1.53129.03636-.061C12.9894,18.55761,12.85508,18.22459,12.72632,17.90554Z"
+              />
+              <path
+                d="M31.67976,26.16531a3.59565,3.59565,0,0,1-1.98568-1.97814,97.28842,97.28842,0,0,1-4.58816-12.29075l-.86528.05077-.0695-.04183-.02769.04755-.00532.00033-.05306.09989L19.38192,20.128C17.262,14.51239,13.80005,5.28353,13.75055,5.15023a.46329.46329,0,0,0-.432-.30619c-1.21319.00013-3.093-.03358-4.25411-.03525l-.12111.91752a3.03257,3.03257,0,0,1,2.06432,1.92186c.04956.10856.48678,1.25612,1.12093,2.933L9.24206,15.53828c-.599-1.47545-1.05857-2.664-1.46779-3.80127L5.1859,5.15234A.46413.46413,0,0,0,4.751,4.84562c-1.33988.005-3.404-.02875-4.6282-.03209L0,5.75367c.96376.17934,1.60759.78692,2.305,2.05915A97.59394,97.59394,0,0,1,6.89213,20.10358l.866-.05083.06883.04136.02737-.047.00562-.00033.05341-.101,4.70281-8.07406c2.1195,5.61553,5.58185,14.8453,5.63135,14.9786a.45944.45944,0,0,0,.433.30619c1.21557-.00046,3.087.03185,4.25313.03473l.12112-.91752a3.02958,3.02958,0,0,1-2.06335-1.92133c-.04981-.10856-.48732-1.25652-1.12182-2.934L22.75645,16.461c.593,1.45874,1.0524,2.64766,1.46732,3.80252l2.5884,6.58362a.46385.46385,0,0,0,.4349.30724c1.35554-.00556,3.37265.02977,4.62822.03157L32,26.24738Z"
+              />
+              <path
+                d="M19.28829,14.135l.09367.23412,2.39637-4.11463-.00163-.00513.21036-.36124a17.34513,17.34513,0,0,1,1.90976-2.17364A.67086.67086,0,0,0,24.07405,7L23.344,5.14181a.46007.46007,0,0,0-.43-.30566l-1.28338-.01578c-.86427-.012-1.44037-.02041-2.11127-.01736l-.2125.90436a3.06993,3.06993,0,0,1,1.30447.5987,3.08642,3.08642,0,0,1,.39857,3.13168L19.835,11.455l-.03636.061.00224.00545-.89181,1.53129-.03638.06155C19.01407,13.45562,19.155,13.80373,19.28829,14.135Z"
+              />
+            </svg>
             <h1 id="logo-long">Watermark Bible Studies</h1>
+            <h1 id="logo-short">WM Studies</h1>
           </router-link>
         </div>
         <div class="nav-right">
@@ -14,15 +25,24 @@
           <router-link :to="{ name: 'Resources' }">Resources</router-link>
           <!-- <router-link :to="{ name: 'Contact' }">Contact</router-link> -->
         </div>
+        <HamButton />
       </div>
     </div>
 
-    <router-view/>
+    <router-view />
     <footer>
       <p class="copyright">© 2022 Davy Jones Design. All Rights Reserved.</p>
     </footer>
   </div>
 </template>
+<script>
+import HamButton from "../src/components/HamButton.vue";
+
+export default {
+  components: { HamButton },
+};
+</script>
+
 <style>
 @import url("https://use.typekit.net/tki1qfa.css");
 html {
@@ -34,7 +54,7 @@ html {
   --shadow-text: 1px 1px 5px rgba(0, 0, 0, 0.6);
   --shadow-subtle: 0px 2px 8px rgba(0, 0, 0, 0.25);
   --shadow-bold: 0px 5px 10px rgba(0, 0, 0, 0.5);
-  --focus-background: rgba(255, 255, 255, .85);
+  --focus-background: rgba(255, 255, 255, 0.85);
   --color-gray-darkest: #2e2e2e;
   --color-gray-darker: #3f3f3f;
   --color-gray-dark: #6a6a6a;
@@ -51,9 +71,9 @@ html {
   --color-champagne: #fbe1c9;
   --color-goldenrod: #d1b02b;
   --color-white: #fff;
-  --color-periwinkle-light: #B4DBFE;
-  --color-periwinkle: #497B9C;
-  --color-periwinkle-dark: #00040A;
+  --color-periwinkle-light: #b4dbfe;
+  --color-periwinkle: #497b9c;
+  --color-periwinkle-dark: #00040a;
   --color-bone: #f6f6eb;
   font-family: urw-form, Arial, Helvetica, sans-serif;
   line-height: 1.5;
@@ -70,8 +90,8 @@ html {
 #app {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
   padding-top: 40px;
 }
 .content-wrapper {
@@ -94,7 +114,7 @@ html::-webkit-scrollbar-track {
   /* box-shadow: inset 0 0 5px black;  */
   border-radius: 10px;
 }
- 
+
 /* Handle */
 html::-webkit-scrollbar-thumb {
   background: var(--color-white);
@@ -104,14 +124,14 @@ html::-webkit-scrollbar-thumb {
 
 /* Handle on hover */
 html::-webkit-scrollbar-thumb:hover {
-  background: var(--color-periwinkle-light); 
+  background: var(--color-periwinkle-light);
 }
 
 body {
   margin: 0;
 }
 h2 {
-  margin: 40px auto;
+  margin: 20px auto;
   text-transform: capitalize;
 }
 h3,
@@ -152,10 +172,7 @@ a {
   justify-content: space-between;
   align-items: flex-end;
   height: 50px;
-
-
 }
-
 .nav-logo {
   /* flex-grow: 5; */
   /* min-width: 30vw; */
@@ -186,18 +203,23 @@ a {
   margin: 0;
   width: 300px;
 }
+#logo-short {
+  display: none;
+}
+#mobileMenu {
+  display: none;
+}
 .nav-right {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
   align-self: flex-end;
-  
 }
 
 #nav a {
   font-weight: bold;
   text-decoration: none;
-  
+
   /* border-radius: 4px; */
 }
 .nav-right a {
@@ -205,7 +227,6 @@ a {
   margin-left: 5px;
   padding: 10px 20px 5px;
   color: var(--color-bone);
-
 }
 .nav-right a:hover {
   background: var(--color-periwinkle-light);
@@ -221,6 +242,30 @@ a {
   /* border-top: 2px solid var(--periwinkle-dark);
   border-left: 2px solid var(--periwinkle-dark);
   border-right: 2px solid var(--periwinkle-dark); */
+}
+@media (max-width: 960px) {
+  .nav-content {
+    align-items: center;
+  }
+  .nav-right {
+    display: none;
+  }
+  #mobileMenu {
+    display: block;
+  }
+  .ham {
+    display: block;
+  }
+  #logo-long {
+    display: none;
+  }
+  #logo-short {
+    display: block;
+    width: 150px;
+  }
+  .search-wrapper {
+    padding: 10px 10px;
+  }
 }
 
 input {
@@ -258,32 +303,40 @@ select {
   -webkit-border-radius: 10px 0 0 10px;
   -moz-border-radius: 10px 0 0 10px;
   border-radius: 10px 0 0 10px;
-  cursor:pointer;
+  cursor: pointer;
   z-index: 1;
-  margin: 0;      
+  margin: 0;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   -webkit-appearance: none;
   -moz-appearance: none;
-  background-image:
-    linear-gradient(45deg, transparent 50%, var(--color-periwinkle-light) 50%),
+  background-image: linear-gradient(
+      45deg,
+      transparent 50%,
+      var(--color-periwinkle-light) 50%
+    ),
     linear-gradient(135deg, var(--color-periwinkle-light) 50%, transparent 50%),
-    linear-gradient(to right, var(--color-periwinkle-dark), var(--color-periwinkle-dark));
-  background-position:
-    calc(100% - 19px) calc(100% - 16px),
-    calc(100% - 11px) calc(100% - 17px),
-    100% 0;
-  background-size:
-    8px 8px,
-    8px 7px,
-    40px 100%;
+    linear-gradient(
+      to right,
+      var(--color-periwinkle-dark),
+      var(--color-periwinkle-dark)
+    );
+  background-position: calc(100% - 19px) calc(100% - 16px),
+    calc(100% - 11px) calc(100% - 17px), 100% 0;
+  background-size: 8px 8px, 8px 7px, 40px 100%;
   background-repeat: no-repeat;
   transition: var(--transition);
-
 }
-@media screen and (-webkit-min-device-pixel-ratio:0) {
-    select {padding-right:25px}
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  select {
+    padding-right: 25px;
+  }
+}
+@media screen and (max-width: 960px) {
+  select {
+    padding-right: 0px;
+  }
 }
 select:focus {
   box-shadow: var(--shadow-bold);
@@ -304,7 +357,6 @@ select > option {
   margin-top: 16px;
   background: var(--color-cognac);
   color: white;
-
 }
 footer {
   background: var(--color-periwinkle-dark);

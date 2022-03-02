@@ -1,39 +1,37 @@
 <template>
   <div>
-        <a v-bind:href="resource.bookLink" target="_blank">
-          <p class="book-label">{{resource.label}}</p>
-          <div class="book-jacket">
-            <img v-bind:src="resource.bookImg" v-bind:alt="resource.title">
-          </div>
-          <div class="resource-card_content">
-            <h4>"{{titleSnippet}}"</h4>
-            <p class="resource-author">
-              Author / Editor : <span class="resource-authorName">{{resource.author}}</span>
-            </p>
-            <p class="resource-description"> {{snippet}}</p>
-            
-            
-          </div>
-        </a>
+    <a v-bind:href="resource.bookLink" target="_blank">
+      <p class="book-label">{{ resource.label }}</p>
+      <div class="book-jacket">
+        <img v-bind:src="resource.bookImg" v-bind:alt="resource.title" />
+      </div>
+      <div class="resource-card_content">
+        <h4>"{{ titleSnippet }}"</h4>
+        <p class="resource-author">
+          Author / Editor :
+          <span class="resource-authorName">{{ resource.author }}</span>
+        </p>
+        <p class="resource-description">{{ snippet }}</p>
+      </div>
+    </a>
   </div>
 </template>
 
 <script>
-import { computed } from 'vue'
+import { computed } from "vue";
 
 export default {
-    props: ['resource'],
-    setup(props) {
-      const snippet = computed(() => {
-        return props.resource.bookDescription.substring(0, 125) + '...'
-      })
-      const titleSnippet = computed(() => {
-        return props.resource.title.substring(0, 20) + '...'
-      })
-      return { snippet, titleSnippet }
-    }
-
-}
+  props: ["resource"],
+  setup(props) {
+    const snippet = computed(() => {
+      return props.resource.bookDescription.substring(0, 125) + "...";
+    });
+    const titleSnippet = computed(() => {
+      return props.resource.title.substring(0, 20) + "...";
+    });
+    return { snippet, titleSnippet };
+  },
+};
 </script>
 
 <style>
@@ -45,8 +43,7 @@ export default {
   display: flex;
   align-content: center;
   justify-content: center;
-  box-shadow: inset 0 0 10px rgba(0, 0, 0, .45);
-  
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.45);
 }
 .book-jacket img {
   margin: 20px;
@@ -54,7 +51,6 @@ export default {
   box-shadow: var(--shadow-subtle);
   width: auto;
   transition: var(--transition-longer);
-
 }
 .book-label {
   position: absolute;
@@ -90,7 +86,7 @@ export default {
 .resource-card:hover .book-label {
   box-shadow: var(--shadow-bold);
   background: var(--color-periwinkle);
-  color:white;
+  color: white;
 }
 .resource-card:hover img {
   transform: scale(1.1);

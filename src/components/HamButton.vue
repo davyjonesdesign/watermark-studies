@@ -54,7 +54,6 @@ export default {
   align-items: center;
   flex-flow: row nowrap;
   padding: 6px 10px;
-  margin-right: 6px;
   transition: var(--transition-fast);
   cursor: pointer;
   border-radius: 10px;
@@ -63,7 +62,7 @@ export default {
   font-weight: 500;
   text-transform: capitalize;
   padding-right: 15px;
-  color: white;
+  color: var(--color-white);
   margin: 0;
 }
 .bar1,
@@ -71,7 +70,7 @@ export default {
 .bar3 {
   width: 32px;
   height: 2px;
-  background-color: white;
+  background-color: var(--color-white);
   transition: 0.4s;
 }
 .bar1 {
@@ -98,7 +97,8 @@ export default {
 }
 .overlay-content {
   position: relative;
-  /* background: pink; */
+  background: var(--color-periwinkle);
+  border-top: 1px solid var(--color-periwinkle-light);
   width: 100%;
   margin: 0;
   text-align: center;
@@ -109,6 +109,7 @@ export default {
 }
 .nav-links a {
   color: white;
+  border-radius: 10px;
   margin: 10px;
   padding: 20px;
   width: auto;
@@ -126,14 +127,14 @@ export default {
 
 /* active */
 .active {
-  background: var(--color-periwinkle-dark);
-  color: var(--color-white);
+  background: var(--color-white);
+  color: var(--color-periwinkle-dark);
   opacity: 1;
   right: 0;
   /* display: flex; */
 }
 .active .bar1 {
-  background-color: var(--color-white);
+  background-color: var(--color-periwinkle-dark);
   transform: rotate(-45deg) translate(-3px, 3px);
 }
 
@@ -142,11 +143,11 @@ export default {
 }
 
 .active .bar3 {
-  background-color: var(--color-white);
+  background-color: var(--color-periwinkle-dark);
   transform: rotate(45deg) translate(-4px, -4px);
 }
 
 .active .navbar__menu-label {
-  color: var(--color-white);
+  color: var(--color-periwinkle-dark);
 }
 </style>

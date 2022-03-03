@@ -31,7 +31,8 @@
 
     <router-view />
     <footer>
-      <p class="copyright">© 2022 Davy Jones Design. All Rights Reserved.</p>
+      <p>Website designed by <a class="footer-link" href="https://davyjonesdesign.com" target="_blank">Davy Jones Design</a></p>
+      <p>© 2022</p>
     </footer>
   </div>
 </template>
@@ -93,6 +94,7 @@ html {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
   padding-top: 40px;
+  overflow-x: hidden ;
 }
 .content-wrapper {
   display: flex;
@@ -159,6 +161,7 @@ a {
   position: fixed;
   display: block;
   top: 0;
+  height: 50px;
   width: 100%;
   background: var(--color-periwinkle);
   /* box-shadow: var(--shadow-text);
@@ -166,7 +169,7 @@ a {
   z-index: 1000;
 }
 .nav-content {
-  /* padding: 10px 15px 0; */
+  padding: 0 20px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -177,9 +180,10 @@ a {
   /* flex-grow: 5; */
   /* min-width: 30vw; */
   align-self: center;
+  height: 50px;
 }
 .nav-logo h1 {
-  margin: 10px 0;
+  margin: 20px 0;
   font-size: 20px;
   font-weight: 600;
   text-transform: capitalize;
@@ -192,7 +196,7 @@ a {
   align-items: center;
   cursor: pointer;
   color: var(--color-white);
-  margin-left: 10px;
+  height: 50px;
 }
 .logo-link svg {
   max-height: 30px;
@@ -246,6 +250,7 @@ a {
 @media (max-width: 960px) {
   .nav-content {
     align-items: center;
+    padding: 0 10px;
   }
   .nav-right {
     display: none;
@@ -335,7 +340,7 @@ select {
 }
 @media screen and (max-width: 960px) {
   select {
-    padding-right: 0px;
+    padding-right: 25px;
   }
 }
 select:focus {
@@ -360,9 +365,24 @@ select > option {
 }
 footer {
   background: var(--color-periwinkle-dark);
-  /* position: absolute; */
-  /* bottom: 0; */
-  /* z-index: -10; */
-  /* justify-self: flex-end; */
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
 }
+.footer-link {
+  color: var(--color-periwinkle-light);
+}
+.footer-link:visited {
+  color: var(--color-periwinkle);
+}
+.footer-link:hover {
+  color: var(--color-white);
+}
+@media screen and (max-width: 960px) {
+  footer {
+    padding: 0 10px;
+    font-size: 14px;
+  }
+}
+
 </style>

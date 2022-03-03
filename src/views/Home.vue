@@ -142,7 +142,7 @@ export default {
   position: relative;
   align-items: center;
   display: flex;
-  height: 25vh;
+  height: 300px;
   align-content: center;
   justify-content: center;
   margin: 0 auto;
@@ -166,12 +166,9 @@ export default {
   margin: 5px 0 0 0;
 }
 @media (max-width: 960px) {
-  .splash-txt {
-    height: 35vh;
-  }
   .splash-txt h2 {
     margin: 10px;
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 </style>

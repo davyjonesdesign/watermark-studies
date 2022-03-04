@@ -103,7 +103,6 @@ export default {
   cursor: pointer;
   margin: 5px 0 10px;
   border: 2px solid var(--color-periwinkle);
-
 }
 .postCard-btn:hover {
   border-color: var(--color-periwinkle-dark);

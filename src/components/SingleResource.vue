@@ -60,7 +60,7 @@ export default {
   padding: 4px 15px;
   border-radius: 20px;
   background: var(--color-bone);
-  opacity: .9;
+  opacity: 0.9;
   box-shadow: var(--shadow);
   color: var(--color-periwinkle);
   /* border: 2px solid var(--color-periwinkle); */

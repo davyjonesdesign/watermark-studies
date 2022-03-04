@@ -31,9 +31,20 @@
 
     <router-view />
     <footer>
-        <p class="web-credit">Website designed by <a class="footer-link" href="https://davyjonesdesign.com" target="_blank">Davy Jones Design</a></p>
-        <p class="image-credit">All images from <a href="https://artvee.com/" class="footer-link">Artvee.com</a></p>
-        <p class="copyright">© 2022</p>
+      <p class="web-credit">
+        Website designed by
+        <a
+          class="footer-link"
+          href="https://davyjonesdesign.com"
+          target="_blank"
+          >Davy Jones Design</a
+        >
+      </p>
+      <p class="image-credit">
+        All images from
+        <a href="https://artvee.com/" class="footer-link">Artvee.com</a>
+      </p>
+      <p class="copyright">© 2022</p>
     </footer>
   </div>
 </template>
@@ -378,7 +389,8 @@ footer p {
 .web-credit {
   font-weight: 600;
 }
-.image-credit, .copyright {
+.image-credit,
+.copyright {
   font-size: 16px;
   font-weight: 400;
   color: var(--color-gray-med);
@@ -398,5 +410,4 @@ footer p {
     font-size: 14px;
   }
 }
-
 </style>

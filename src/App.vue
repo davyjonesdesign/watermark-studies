@@ -105,13 +105,12 @@ html {
   -moz-osx-font-smoothing: grayscale;
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
-  padding-top: 40px;
 }
 .content-wrapper {
   display: flex;
   flex-direction: column;
-  /* justify-items: space-between; */
-  /* height: 100vh; */
+  justify-content: space-between;
+  height: 100vh;
 }
 /* Hide scrollbar for Chrome, Safari and Opera */
 
@@ -280,7 +279,7 @@ a {
   }
   #logo-short {
     display: block;
-    width: 150px;
+    width: auto;
   }
   .search-wrapper {
     padding: 10px 10px;
@@ -406,7 +405,11 @@ footer p {
 }
 @media screen and (max-width: 960px) {
   footer {
-    padding: 0 10px;
+    padding: 10px 10px;
+    font-size: 14px;
+  }
+  .image-credit,
+  .copyright {
     font-size: 14px;
   }
 }

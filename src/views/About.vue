@@ -26,7 +26,7 @@
   display: flex;
   padding: 40px 60px 40px;
   max-width: 960px;
-  margin: 60px auto 40px;
+  margin: 80px auto 40px;
   flex-direction: row;
   align-items: center;
   justify-content: center;
@@ -53,14 +53,14 @@
 @media (max-width: 960px) {
   .about-page {
     padding: 20px;
-    margin: 40px 10px 40px;
+    margin: 80px 10px 40px;
   }
 }
 @media (max-width: 600px) {
   .about-page {
     display: flex;
     padding: 20px;
-    margin: 40px 10px 40px;
+    margin: 80px 10px 40px;
     flex-direction: column;
   }
   .about-img img {

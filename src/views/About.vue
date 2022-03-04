@@ -20,7 +20,7 @@
 </template>
 <style scoped>
 .about {
-  min-height: calc(100vh - 91px);
+  min-height: calc(100vh - 147px);
 }
 .about-page {
   display: flex;

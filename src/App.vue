@@ -31,8 +31,9 @@
 
     <router-view />
     <footer>
-      <p>Website designed by <a class="footer-link" href="https://davyjonesdesign.com" target="_blank">Davy Jones Design</a></p>
-      <p>© 2022</p>
+        <p class="web-credit">Website designed by <a class="footer-link" href="https://davyjonesdesign.com" target="_blank">Davy Jones Design</a></p>
+        <p class="image-credit">All images from <a href="https://artvee.com/" class="footer-link">Artvee.com</a></p>
+        <p class="copyright">© 2022</p>
     </footer>
   </div>
 </template>
@@ -94,7 +95,6 @@ html {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
   padding-top: 40px;
-  overflow-x: hidden ;
 }
 .content-wrapper {
   display: flex;
@@ -231,9 +231,11 @@ a {
   margin-left: 5px;
   padding: 10px 20px 5px;
   color: var(--color-bone);
+  border: 2px solid var(--color-periwinkle);
 }
 .nav-right a:hover {
   background: var(--color-periwinkle-light);
+  border-color: var(--color-periwinkle);
   color: var(--color-periwinkle-dark);
 }
 
@@ -241,6 +243,7 @@ a {
   /* border-bottom: 4px solid var(--goldenrod); */
   background: var(--color-white);
   color: var(--color-periwinkle-dark);
+  border-color: var(--color-white);
 
   /* box-shadow: 0px -3px 3px var(--gray-dark); */
   /* border-top: 2px solid var(--periwinkle-dark);
@@ -365,15 +368,26 @@ select > option {
 }
 footer {
   background: var(--color-periwinkle-dark);
-  padding: 0 20px;
-  display: flex;
-  justify-content: space-between;
+  padding: 10px 20px;
+  text-align: center;
+}
+footer p {
+  margin: 0;
+  padding: 2px 0;
+}
+.web-credit {
+  font-weight: 600;
+}
+.image-credit, .copyright {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--color-gray-med);
 }
 .footer-link {
   color: var(--color-periwinkle-light);
 }
 .footer-link:visited {
-  color: var(--color-periwinkle);
+  color: var(--color-periwinkle-light);
 }
 .footer-link:hover {
   color: var(--color-white);

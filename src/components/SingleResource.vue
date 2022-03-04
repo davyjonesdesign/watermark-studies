@@ -12,6 +12,7 @@
           <span class="resource-authorName">{{ resource.author }}</span>
         </p>
         <p class="resource-description">{{ snippet }}</p>
+        <button class="postCard-btn">Go to Resource</button>
       </div>
     </a>
   </div>
@@ -58,9 +59,11 @@ export default {
   margin: 10px;
   padding: 4px 15px;
   border-radius: 20px;
-  background: var(--color-periwinkle-dark);
+  background: var(--color-bone);
+  opacity: .9;
   box-shadow: var(--shadow);
-  color: var(--color-periwinkle-light);
+  color: var(--color-periwinkle);
+  /* border: 2px solid var(--color-periwinkle); */
   font-weight: 600;
   text-align: right;
   display: flex;
@@ -80,14 +83,12 @@ export default {
   /* border: 1px solid var(--periwinkle-light); */
   box-shadow: var(--shadow-bold);
 }
-.resource-card:hover .book-jacket {
-  /* opacity: .75; */
+.resource-card:hover .postCard-btn {
+  border-color: var(--color-periwinkle-dark);
+  background: var(--color-periwinkle-light);
+  color: var(--color-periwinkle-dark);
 }
-.resource-card:hover .book-label {
-  box-shadow: var(--shadow-bold);
-  background: var(--color-periwinkle);
-  color: white;
-}
+
 .resource-card:hover img {
   transform: scale(1.1);
   opacity: 0.85;

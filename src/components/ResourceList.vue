@@ -102,7 +102,7 @@ export default {
   min-height: 100vh;
 }
 .resource-card {
-  background: var(--color-gray-lightest);
+  background: var(--color-bone);
   /* padding: 15px; */
   border-radius: 10px;
   /* height: 100%; */

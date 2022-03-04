@@ -58,7 +58,7 @@ export default {
   transition: var(--transition-longer);
 }
 .card-img {
-  background-color: var(--color-periwinkle-dark);
+  background-color: var(--color-periwinkle-light);
   overflow: hidden;
   /* width: 600px; */
   height: 300px;
@@ -90,7 +90,7 @@ export default {
   font-size: 16px;
 }
 .postCard-btn {
-  background-color: var(--color-periwinkle); /* Green */
+  background-color: var(--color-periwinkle);
   border: none;
   color: white;
   padding: 15px 32px;
@@ -102,15 +102,24 @@ export default {
   border-radius: 5px;
   cursor: pointer;
   margin: 5px 0 10px;
+  border: 2px solid var(--color-periwinkle);
+
 }
 .postCard-btn:hover {
+  border-color: var(--color-periwinkle-dark);
   box-shadow: var(--shadow-bold);
-  background: var(--color-periwinkle-dark);
+  background: var(--color-periwinkle-light);
+  color: var(--color-periwinkle-dark);
 }
 
 .postCard:hover {
   box-shadow: var(--shadow-bold);
-  background: white;
+  background: var(--color-white);
+}
+.postCard:hover .postCard-btn {
+  border-color: var(--color-periwinkle-dark);
+  background: var(--color-periwinkle-light);
+  color: var(--color-periwinkle-dark);
 }
 .postCard:hover img {
   transform: scale(1.1);

@@ -40,11 +40,13 @@
           >Davy Jones Design</a
         >
       </p>
-      <p class="image-credit">
-        All images from
-        <a href="https://artvee.com/" class="footer-link">Artvee.com</a>
-      </p>
-      <p class="copyright">© 2022</p>
+      <div class="footer-bottom">
+        <p class="copyright">
+          © 2022<span class="line-break">|</span>
+          All images from
+          <a href="https://artvee.com/" class="footer-link">Artvee.com</a>
+        </p>
+      </div>
     </footer>
   </div>
 </template>
@@ -219,6 +221,7 @@ a {
 }
 #logo-short {
   display: none;
+  width: 136px;
 }
 #mobileMenu {
   display: none;
@@ -279,7 +282,6 @@ a {
   }
   #logo-short {
     display: block;
-    width: auto;
   }
   .search-wrapper {
     padding: 10px 10px;
@@ -377,8 +379,8 @@ select > option {
   color: white;
 }
 footer {
-  background: var(--color-periwinkle-dark);
-  padding: 10px 20px;
+  background: var(--color-gray-darkest);
+  padding: 10px 20px 20px;
   text-align: center;
 }
 footer p {
@@ -387,12 +389,17 @@ footer p {
 }
 .web-credit {
   font-weight: 600;
+  color: var(--color-bone);
 }
-.image-credit,
 .copyright {
+  padding-top: 3px;
   font-size: 16px;
   font-weight: 400;
-  color: var(--color-gray-med);
+  color: var(--color-gray-light);
+}
+.line-break {
+  color: var(--color-gray-dark);
+  margin: 0 5px;
 }
 .footer-link {
   color: var(--color-periwinkle-light);

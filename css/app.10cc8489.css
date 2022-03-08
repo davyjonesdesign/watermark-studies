@@ -564,7 +564,6 @@ footer p {
   position: relative;
   align-items: center;
   display: flex;
-  height: 300px;
   align-content: center;
   justify-content: center;
   margin: 0 auto;
@@ -579,6 +578,7 @@ footer p {
     url(https://mdl.artvee.com/sftb/508010ld.jpg);
   background-position: 50%;
   filter: grayscale(100%);
+  padding: 70px 10px 30px;
 }
 .splash-txt h2[data-v-d99f8482] {
   max-width: 960px;

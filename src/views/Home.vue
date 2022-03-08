@@ -51,25 +51,26 @@ export default {
   z-index: -10;
 }
 .splash-txt {
-  color: white;
-  display: flex;
+  color: #fff;
   flex-direction: column;
-  justify-content: center;
   position: relative;
   align-items: center;
   display: flex;
-  height: 300px;
   align-content: center;
   justify-content: center;
   margin: 0 auto;
   text-align: center;
   font-size: 16px;
   z-index: -7;
-  background-image: linear-gradient(0deg, rgba(0 0 0 / 15%), rgba(0 0 0 / 60%)),
-    url("https://mdl.artvee.com/sftb/508010ld.jpg");
-  background-position: center;
-  -webkit-filter: grayscale(100%);
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.15),
+      rgba(0, 0, 0, 0.6)
+    ),
+    url(https://mdl.artvee.com/sftb/508010ld.jpg);
+  background-position: 50%;
   filter: grayscale(100%);
+  padding: 70px 10px 30px;
 }
 .splash-txt h2 {
   max-width: 960px;

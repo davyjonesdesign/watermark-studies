@@ -292,7 +292,7 @@ export default {
   display: flex;
   padding: 20px 60px 40px;
   max-width: 960px;
-  margin: 60px auto 40px;
+  margin: 80px auto 40px;
   flex-direction: column;
   background: var(--color-bone);
   border-radius: 15px;
@@ -315,7 +315,7 @@ export default {
 }
 @media (max-width: 960px) {
   .post-page {
-    margin: 20px 10px 40px;
+    margin: 80px 10px 40px;
     padding: 20px 30px 40px;
   }
   .post p {

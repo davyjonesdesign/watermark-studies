@@ -221,7 +221,7 @@ a {
 }
 #logo-short {
   display: none;
-  width: 136px;
+  min-width: 125px;
 }
 #mobileMenu {
   display: none;
